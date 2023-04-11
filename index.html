@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3bc8ccd7ba.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener("DOMContentLoaded",function(){
+        VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        birdSize: 0.60,
+        wingSpan: 26.00,
+        speedLimit: 4.00,
+        separation: 28.00,
+        quantity: 4.00,
+        backgroundAlpha: 0.0
+        })
+        setTimeout(()=> {
+            const main = document.querySelector('main');
+            main.style.opacity = 1;
+            main.style.filter = 'blur(0px)';
+        },800
+        )
+        
+    })
+    
+    </script>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main>
+        <header>
+            <img src="IMG/anh1.jpg" alt="">
+            <h1>@HoanTV1907</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house" style="font-size: 1.1em"></i>
+                    こんにちは　😊</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCNPawTFMjrBd2B5ps546_kA">
+                    <img src="IMG/Youtube.svg" alt="youtube" width="20">
+                    Youtube</a>
+            </li>
+            <li>
+                
+                <a href="https://www.facebook.com/Hoanta197">
+                    <img src="IMG/facebook.svg" alt="facebook" width="20">
+                    Facebook</a>
+            </li>
+            <li>
+                <a href="https://github.com/hoantavan2002"><img src="IMG/github.svg" alt="github" width="20"> GitHub</a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
